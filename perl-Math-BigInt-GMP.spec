@@ -32,6 +32,7 @@ perl Makefile.PL INSTALLDIRS="vendor"
 %make  CFLAGS="%{optflags}"
 
 %check
+export PERL5LIB=%{perl_vendorlib}
 make test
 
 %install
