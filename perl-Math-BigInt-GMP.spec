@@ -14,7 +14,9 @@ Source:     http://www.cpan.org/modules/by-module/Math/%{module}-%{version}.tar.
 BuildRequires:	perl-devel
 BuildRequires:	gmp-devel
 BuildRequires:	perl(YAML)
-BuildRequires:	perl(Math::BigInt) >= 1.87
+# automatic dependency doesn't work here, because perl package
+# provides an unversioned one
+BuildRequires:	perl-Math-BigInt >= 1.87
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
