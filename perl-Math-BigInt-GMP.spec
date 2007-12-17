@@ -17,7 +17,6 @@ BuildRequires:	perl(YAML)
 # automatic dependency doesn't work here, because perl package
 # provides an unversioned one
 BuildRequires:	perl-Math-BigInt >= 1.87
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This package contains a replacement (drop-in) module for
