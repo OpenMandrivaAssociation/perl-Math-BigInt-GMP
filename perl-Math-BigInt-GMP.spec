@@ -1,5 +1,5 @@
 %define upstream_name    Math-BigInt-GMP
-%define upstream_version 1.24
+%define upstream_version 1.34
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
