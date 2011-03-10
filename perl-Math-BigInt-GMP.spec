@@ -1,9 +1,9 @@
 %define upstream_name    Math-BigInt-GMP
-%define upstream_version 1.35
+%define upstream_version 1.36
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	High speed arbitrary size integer math
 License:	Artistic
