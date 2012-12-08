@@ -48,3 +48,67 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/auto/Math
 %{_mandir}/man*/*
+
+
+%changelog
+* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 1.360.0-4mdv2012.0
++ Revision: 765475
+- rebuilt for perl-5.14.2
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 1.360.0-3
++ Revision: 763969
+- rebuilt for perl-5.14.x
+
+* Sat May 21 2011 Oden Eriksson <oeriksson@mandriva.com> 1.360.0-2
++ Revision: 676631
+- rebuild
+
+* Thu Mar 10 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.360.0-1
++ Revision: 643402
+- update to new version 1.36
+
+  + Funda Wang <fwang@mandriva.org>
+    - rebuild
+
+* Sat Feb 12 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.350.0-1
++ Revision: 637371
+- update to new version 1.35
+
+* Mon Feb 07 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.340.0-1
++ Revision: 636732
+- new version
+
+* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.240.0-1mdv2010.0
++ Revision: 403853
+- rebuild using %%perl_convert_version
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.24-5mdv2009.0
++ Revision: 257780
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.24-4mdv2009.0
++ Revision: 245827
+- rebuild
+
+* Tue Jan 15 2008 Thierry Vignaud <tv@mandriva.org> 1.24-2mdv2008.1
++ Revision: 152125
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Sun Sep 02 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.24-1mdv2008.1
++ Revision: 78162
+- new version
+
+
+* Thu May 04 2006 Nicolas L�cureuil <neoclust@mandriva.org> 1.18-2mdk
+- Fix According to perl Policy
+	-Source URL
+	- URL
+- use mkrel
+
+* Thu Oct 20 2005 Oden Eriksson <oeriksson@mandriva.com> 1.18-1mdk
+- initial  Mandriva package
+
