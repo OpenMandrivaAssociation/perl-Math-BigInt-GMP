@@ -1,14 +1,14 @@
-%define upstream_name    Math-BigInt-GMP
-%define upstream_version 1.37
+%define	modname	Math-BigInt-GMP
+%define	modver	1.37
 
 Summary:	High speed arbitrary size integer math
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
 Release:	1
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Math/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}
+Source0:	http://www.cpan.org/modules/by-module/Math/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	gmp-devel
 BuildRequires:	perl(YAML)
@@ -22,7 +22,7 @@ This package contains a replacement (drop-in) module for
 Math::BigInt's core, Math::BigInt::Calc.pm.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{modname}-%{modver}
 
 %build
 export PERL5LIB=%{perl_vendorlib}
@@ -41,4 +41,3 @@ make test
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/auto/Math
 %{_mandir}/man*/*
-
