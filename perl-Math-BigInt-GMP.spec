@@ -9,7 +9,6 @@ License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Math/%{modname}-%{modver}.tar.gz
-
 BuildRequires:	gmp-devel
 BuildRequires:	perl(YAML)
 # automatic dependency doesn't work here, because perl package
@@ -40,4 +39,5 @@ make test
 %doc build BUGS CHANGES CREDITS INSTALL LICENSE README SIGNATURE TODO
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/auto/Math
-%{_mandir}/man*/*
+%{_mandir}/man3/*
+
