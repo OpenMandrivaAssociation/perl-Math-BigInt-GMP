@@ -1,2 +1,4 @@
+removed_sources:
+  Math-BigInt-GMP-1.36.tar.gz: e98bf0bd2349b292f892d530d564e1f7dc158c29
 sources:
-  "Math-BigInt-GMP-1.36.tar.gz": e98bf0bd2349b292f892d530d564e1f7dc158c29
+  Math-BigInt-GMP-1.38.tar.gz: 4dd42c14878d464aa9228996351e3d6dc0a75dc2
