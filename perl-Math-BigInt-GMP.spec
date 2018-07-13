@@ -10,6 +10,8 @@ License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Math/%{modname}-%{modver}.tar.gz
+BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test)
 BuildRequires:	gmp-devel
 BuildRequires:	perl(YAML)
 # automatic dependency doesn't work here, because perl package
