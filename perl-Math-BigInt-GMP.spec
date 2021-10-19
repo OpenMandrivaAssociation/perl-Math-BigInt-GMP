@@ -24,7 +24,7 @@ This package contains a replacement (drop-in) module for
 Math::BigInt's core, Math::BigInt::Calc.pm.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
 export PERL5LIB=%{perl_vendorlib}
@@ -36,12 +36,12 @@ export PERL5LIB=%{perl_vendorlib}
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc build BUGS CHANGES CREDITS INSTALL LICENSE README SIGNATURE TODO
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/auto/Math
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 
 
