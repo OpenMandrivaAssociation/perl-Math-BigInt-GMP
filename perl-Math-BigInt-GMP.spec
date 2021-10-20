@@ -29,11 +29,7 @@ Math::BigInt's core, Math::BigInt::Calc.pm.
 %build
 export PERL5LIB=%{perl_vendorlib}
 perl Makefile.PL INSTALLDIRS="vendor"
-%make  CFLAGS="%{optflags}"
-
-%check
-export PERL5LIB=%{perl_vendorlib}
-make test
+%make_build CFLAGS="%{optflags}"
 
 %install
 %make_install
@@ -43,5 +39,3 @@ make test
 %{perl_vendorarch}/Math
 %{perl_vendorarch}/auto/Math
 %doc %{_mandir}/man3/*
-
-
