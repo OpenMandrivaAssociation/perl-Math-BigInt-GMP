@@ -5,7 +5,7 @@ Summary:	High speed arbitrary size integer math
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
