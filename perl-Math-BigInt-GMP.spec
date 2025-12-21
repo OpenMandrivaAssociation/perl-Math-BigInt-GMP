@@ -10,6 +10,7 @@ License:	Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Math/%{modname}-%{modver}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test)
 BuildRequires:	gmp-devel
